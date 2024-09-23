@@ -1,0 +1,12 @@
+---
+import Layout from '../layouts/Layout.astro'
+import { Image } from 'astro:assets'
+import myImage from '../../public/images/fire.png'
+---
+
+<Layout title="404 not Found">
+  <div class="flex flex-col justify-center items-center">
+    <h1 class="text-white text-3xl">Esta pagina no existe ...</h1>
+    <Image src={myImage} alt="Not found" />
+  </div>
+</Layout>
